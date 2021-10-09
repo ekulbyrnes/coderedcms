@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "Initialising CodeRedCMS..."
+coderedcms start st-survival --sitename "Star Trek: Survival" --domain "https://st-s.scouthack.com"
+
 echo "Performing Django database migrations (if any)"
 python manage.py migrate --no-input
 
